@@ -20,3 +20,33 @@ const beers = [
     { name: 'Stolen Fruit', abv: 4.6, label: 'https://s3.amazonaws.com/brewerydbapi/beer/YGT30k/upload_uVCHP7-large.png', type: 'Wheat' },
 ];
 
+function cambiarUrl(beers){
+
+ // return beers.map(beer=>({...beer, label: beer.label.replace('https://s3.amazonaws.com/brewerydbapi/beer/dMLwGo', 'https://tecnoshare.sharepoint.com/sites/beer')}))
+/*
+
+
+for (let index = 0; index < beers.length; index++) {
+  console.log('probando')
+  beers[index].label.split('/').pop()[1];
+
+  
+
+}
+
+return beers
+*/
+/*
+beers.map( nuevaBeer => ({
+
+ label: nuevaBeer.label.split('/').pop()
+
+
+}))
+*/
+
+  
+
+}
+
+console.log(cambiarUrl(beers))

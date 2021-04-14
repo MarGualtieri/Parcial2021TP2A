@@ -15,8 +15,51 @@
   }
 
 const sale = function (article, cant){
+ 
+ let codigo;
+
+  if (article ==='shoes') {
+   
+   if (inventory.shoes>=cant) {
+     codigo=200;
+     inventory.shoes= inventory.shoes - cant
+   }else{
+     codigo=500;
+   }
+  }
+  if (article ==='socks') {
+   
+    if (inventory.socks>=cant) {
+      codigo=200;
+      inventory.socks= inventory.socks - cant
+    }else{
+      codigo=500;
+    }
+   }
+   if (article ==='shirts') {
+   
+    if (inventory.shirts>=cant) {
+      codigo=200;
+      inventory.shirts= inventory.shirts - cant
+    }else{
+      codigo=500;
+    }
+   }
+   if (article ==='pants') {
+   
+    if (inventory.pants>=cant) {
+      codigo=200;
+      inventory.pants= inventory.pants - cant
+    }else{
+      codigo=500;
+    }
+   }
   
+  return codigo
 }
+
+
+
 
 // TESTS (no modificar)
 console.log(sale('shoes',8) === 200 && inventory.shoes === 2);

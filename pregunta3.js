@@ -4,6 +4,18 @@
 
 const greater3 = nums => {
     
+    
+   if (nums.length < 3) {
+      
+        return undefined
+    }
+  
+   num2 = nums.sort((a, b) => a - b)
+
+   return num2[num2.length-3]
+
+   
+
 }
 
 
